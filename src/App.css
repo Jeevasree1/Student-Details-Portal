@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #c293af; /* Set your desired background color */
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.table-container {
+  width: 80%;
+  margin-top: 20px;
+
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table th:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+table td {
+  padding: 10px;
+}
+
+table input[type="text"],
+table input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+table button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+}
+
+table button:hover {
+  background-color: #45a049;
+}
+
+/* Edit mode styles */
+table .edit-mode input[type="text"],
+table .edit-mode input[type="number"] {
+  padding: 4px;
+  width: calc(100% - 16px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .table-container {
+    width: 95%;
+  }
+}
